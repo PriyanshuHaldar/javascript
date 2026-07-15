@@ -57,5 +57,27 @@ console.log(3 + 4 + "2")
 */
 
 let gameCounter=100
-let newgameCounter=gameCounter++;
+++gameCounter                      // pre increment (prefix)
+let newgameCounter=gameCounter++;   // post increment (postfix)
 console.log(newgameCounter,gameCounter)
+
+
+/*  Comparison      */
+
+console.log(null>0)
+console.log(null==0)
+console.log(null>=0)
+
+console.log(undefined>0)
+console.log(undefined==0)
+console.log(undefined>=0)
+
+
+// ===    -> it checks the datatype also along with the value (same or not)
+
+console.log(3 ==="3")   
+
+//  Symbols are unique
+const Id=Symbol("123")
+const Id2=Symbol("123")
+console.log(Id===Id2)
